@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- The grid: four columns -->
+<div class="column">
+    <div class="row">
+        <img src="1.jpg" alt="Nature" />
+        <h2 id="name" hidden>1</h2>
+        <p  id="tech"hidden>web</p>
+        <h4 id="screen"hidden>11</h4>
+        <p  id="dis"hidden>hello
+        </p>
+    </div>
+    <div class="row">
+        <img src="2.jpeg" alt="Snow" />
+        <h2 id="name"hidden>2</h2>
+        <p  id="tech"hidden>app</p>
+        <h4 id="screen"hidden>22</h4>
+        <p  id="dis"hidden>there
+        </p>
+    </div>
+    <div class="row">
+        <img src="3.jpg" alt="Mountains" />
+        <h2 id="name"hidden>3</h2>
+        <p  id="tech"hidden>seo</p>
+        <h4 id="screen"hidden>33</h4>
+        <p  id="dis"hidden>world
+        </p>
+    </div>
+    <div class="row">
+        <img src="4.jpg" alt="Lights" />
+        <h2 id="name"hidden>4</h2>
+        <p  id="tech"hidden>ui</p>
+        <h4 id="screen"hidden>44</h4>
+        <p  id="dis"hidden>ui/ux
+        </p>
+    </div>
+</div>
+<div class="cont" id="default">
+   <img  src="1.jpg"  class="slider"/>
+    <div style="float: left; width: auto; ">
+        <h2 class="heading">1</h2>
+        <p >ios</p>
+        <h4 class="second" >11</h4>
+        <p >iOs 
+        </p>
+    </div>
+    
+</div>
+
+<!-- The expanding image container -->
+<div class="container" id="container">
+    <!-- Close the image -->
+    <span class="closebtn">&zhcy;&aleph;&cross;</span>
+   
+    <!-- Expanded image -->
+   <img  id="expandedImg" class="slider"/>
+    <div style="float: left; width: auto; ">
+        <h2 class="heading" id="imgn"></h2>
+        <p  id="imgt"></p>
+        <h4 class="second" id="imgs"></h4>
+        <p  id="imgd"></p>
+    </div>
+</div>
+
+    <!-- Image text -->
+    <!-- <div id="imgtext"></div> -->
+<script src="main.js"></script>
+</body>
+</html>

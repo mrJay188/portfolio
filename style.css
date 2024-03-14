@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  height: auto;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that float next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  direction: rtl; /* Set text direction to right-to-left */
+}
+
+/* Style the images inside the grid */
+.row img {
+  opacity: 0.9;
+  height: 100px; 
+  width: 100px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 30%;
+  box-shadow: 4px;
+  transition-duration: 900ms;
+}
+
+.row img:hover {
+  opacity: 1;
+  border-radius: 10%;
+  transition-duration: 900ms;
+}
+
+/* Clear floats after the columns */
+.column:after {
+   /* content: ""; */
+  display: table;
+  clear:both;
+}
+
+/* The expanding image container */
+.container {
+  margin-left: 50px;
+  position: relative;
+  display: none;
+}
+
+.cont {
+  margin-left: 50px;
+  position: relative;
+  display: block; 
+}
+
+/* Expanding image text */
+/* #imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 250px;
+  color: white;
+  font-size: 20px;
+} */
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.slider {
+  float: left;
+  width: 300px;;
+  height: 450px ;
+}
+
+.heading {
+  margin-top:30px;
+  margin-left: 30px;
+}
+
+.second {
+  margin-left: 30px;
+}
+
+p {
+  margin-left: 30px;
+  align-content: stretch;
+}
+
+.try {
+  display: hide;
+}
