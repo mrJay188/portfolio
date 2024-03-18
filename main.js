@@ -6,11 +6,11 @@
   const imgn = document.getElementById("imgn");
   const imgd = document.getElementById("imgd");
   const imgs = document.getElementById("imgs");
-  const auto = document.querySelector(".cont");
+//   const auto = document.querySelector(".cont");
 
   document.querySelectorAll(".row img").forEach(function(img) {
       img.addEventListener("click", function() {
-          auto.style.display = "none";
+        //   auto.style.display = "none";
           const name = this.nextElementSibling.innerHTML;
           const tech = this.nextElementSibling.nextElementSibling.innerHTML;
           const screen = this.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML;
@@ -23,7 +23,7 @@
       expandImg.src = src;
       expandImg.alt = alt;
       // imgText.textContent = alt;
-      container.style.display = "block";
+    //   container.style.display = "block";
       imgn.innerHTML = name;
       imgt.innerHTML = tech;
       imgs.innerHTML = screen;
@@ -32,8 +32,8 @@
   }
 
   document.querySelector(".closebtn").addEventListener("click", function() {
-      container.style.display = "none";
-      auto.style.display = "block";
+    //   container.style.display = "none";s
+    //   auto.style.display = "block";
       // auto.style.margin-left="150px";
   });
 })();

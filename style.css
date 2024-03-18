@@ -69,14 +69,14 @@ body {
 .container {
   margin-left: 50px;
   position: relative;
-  display: none;
+  display: block;
 }
 
-.cont {
+/* .cont {
   margin-left: 50px;
   position: relative;
   display: block; 
-}
+} */
 
 /* Expanding image text */
 /* #imgtext {
